@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'NewsFeed'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,6 +55,8 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', null),
+    'news_api_url' => env('NEWS_API_URL', null),
+    'news_api_key' => env('NEWS_API_KEY', null),
 
     /*
     |--------------------------------------------------------------------------
