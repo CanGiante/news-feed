@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'NewsFeed'),
+    'name' => env('APP_NAME', 'Laravel Journal'),
 
     /*
     |--------------------------------------------------------------------------
