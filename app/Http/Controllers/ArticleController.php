@@ -12,11 +12,9 @@ class ArticleController extends Controller
   public function index(){
 
     $articles = json_decode(file_get_contents(config('services.newsapi.baseurl')
-    . 'everything?qInTitle=laravel&apiKey='
+    . 'everything?qInTitle=laravel&pageSize=100f&apiKey='
     . config('services.newsapi.key')), true);
 
     return view('welcome', compact('articles'));
-
-
   }
 }

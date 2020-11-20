@@ -5,8 +5,8 @@
     <div class="container mb-3">
       <div class="row">
         <div class="col">
-          <a class="text-decoration-none" href="{{ $article['url'] }}" target="_blank">
 
+          <a class="text-decoration-none" href="{{ $article['url'] }}" target="_blank">
             <article class="card p-5">
 
               {{-- title --}}
@@ -24,9 +24,9 @@
               </div>
 
               {{-- description --}}
-              <p class="text-center mx-5 mb-5 mt-2">{{ $article['description'] }} </p>
+              <p class="text-center mx-5 mb-5 mt-2">{{ $article['description'] }}</p>
 
-              <div class="text-right" style="margin-right:-30px;margin-bottom:-30px">
+              <div class="text-right font-italic" style="margin-right:-30px;margin-bottom:-30px;font-size:small">
                 {{-- author --}}
                 <span class="d-block">
                   Author: {{ $article['author'] ? : "Unknown" }}
@@ -48,6 +48,7 @@
 
             </article>
           </a>
+
         </div>
       </div>
     </div>
