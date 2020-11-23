@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+  <example-component></example-component>
+
   @foreach($articles['articles'] as $article)
     <div class="container mb-3">
       <div class="row">
