@@ -12,7 +12,7 @@
               {{-- title --}}
               <h2 class="text-center mb-4">{{ $article['title'] }}</h2>
 
-              <example-component article="{{ $article['title'] }}"></example-component>
+              <example-component title="{{ $article['title'] }}"></example-component>
 
               {{-- image --}}
               <div class="align-self-center m-3">

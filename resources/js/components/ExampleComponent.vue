@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="card-header">Example Component</div>
 
-                    <div class="card-body">
+                    <div class="card-body ms_title">
                         {{ title }}
                     </div>
 
@@ -17,10 +17,10 @@
 
 <script>
     export default {
-        props: ['article'],
+        props: ['title'],
         data() {
             return {
-                title: this.article
+                title: this.title
             }
         },
         mounted() {
@@ -29,7 +29,11 @@
     };
 </script>
 
-<!--<style scoped lang="scss">-->
-<!--@import "./styles/_variables.scss";-->
+<style scoped lang="scss">
+@import "../../sass/_variables.scss";
 
-<!--</style>-->
+    .ms_title {
+        color: $red;
+    }
+
+</style>
