@@ -6,8 +6,9 @@
                     <div class="card-header">Example Component</div>
 
                     <div class="card-body">
-                        {{ msg }}
+                        {{ title }}
                     </div>
+
                 </div>
             </div>
         </div>
@@ -16,9 +17,10 @@
 
 <script>
     export default {
-        data: function() {
+        props: ['article'],
+        data() {
             return {
-                msg: 'Hello Vue!'
+                title: this.article
             }
         },
         mounted() {
@@ -26,3 +28,8 @@
         }
     };
 </script>
+
+<!--<style scoped lang="scss">-->
+<!--@import "./styles/_variables.scss";-->
+
+<!--</style>-->

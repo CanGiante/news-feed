@@ -1924,10 +1924,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['article'],
   data: function data() {
     return {
-      msg: 'Hello Vue!'
+      title: this.article
     };
   },
   mounted: function mounted() {
@@ -37537,7 +37539,9 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _vm._v(
-              "\n                    " + _vm._s(_vm.msg) + "\n                "
+              "\n                    " +
+                _vm._s(_vm.title) +
+                "\n                "
             )
           ])
         ])

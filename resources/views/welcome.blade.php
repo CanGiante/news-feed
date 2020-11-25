@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-  <example-component></example-component>
-
   @foreach($articles['articles'] as $article)
     <div class="container mb-3">
       <div class="row">
@@ -12,7 +10,9 @@
             <article class="card p-5">
 
               {{-- title --}}
-              <h2 class="text-center mb-4">{{ $article['title'] }} </h2>
+              <h2 class="text-center mb-4">{{ $article['title'] }}</h2>
+
+              <example-component article="{{ $article['title'] }}"></example-component>
 
               {{-- image --}}
               <div class="align-self-center m-3">
