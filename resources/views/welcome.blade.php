@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    @foreach($articles['articles'] as $article)
+    @foreach($data['articles'] as $article)
         <article-component
             source="{{ $article['url'] }}"
             title="{{ $article['title'] }}"
